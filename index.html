@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AUTO-MAX Serwis Klimatyzacji - kompleksowy serwis klimatyzacji samochodowej, serwis mobilny z dojazdem do klienta, diagnostyka i regeneracja sprezarek."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b0d12" />
+    <title>AUTO-MAX Serwis Klimatyzacji | Serwis i Mobilny Dojazd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a href="#" class="site-header__brand">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D6EFD" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+          </svg>
+          <span>AUTO-MAX Serwis Klimatyzacji</span>
+        </a>
+        <nav class="site-nav" aria-label="Nawigacja glowna">
+          <a href="#uslugi">Uslugi</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#o-nas">O nas</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+        <a href="#kontakt" class="site-header__cta">Serwis mobilny</a>
+        <button type="button" class="site-header__menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Przelacz menu">
+          <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+          <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="site-header__drawer" id="mobile-drawer" aria-hidden="true">
+        <a href="#uslugi">Uslugi</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true">
+          <img src="images/hero.png" alt="" width="1920" height="1080" decoding="async" fetchpriority="high" />
+          <div class="hero__overlay"></div>
+          <div class="hero__gradient"></div>
+        </div>
+        <div class="hero__content container">
+          <p class="hero__eyebrow js-reveal">AUTO-MAX Serwis Klimatyzacji</p>
+          <h1 id="hero-title" class="hero__title js-reveal js-reveal-delay-1">
+            Profesjonalny serwis klimatyzacji samochodowej
+          </h1>
+          <p class="hero__lead js-reveal js-reveal-delay-2">
+            AUTO-MAX to kompleksowy serwis klimatyzacji, specjalistyczna regeneracja sprezarek oraz serwis mobilny z dojazdem do klienta.
+          </p>
+          <div class="hero__actions js-reveal js-reveal-delay-3">
+            <a href="#kontakt" class="btn btn--primary">Umow wizyte</a>
+            <a href="#uslugi" class="btn btn--outline">Zobacz serwis mobilny</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi" class="section--services" aria-labelledby="services-title">
+        <div class="container">
+          <header class="section-head js-reveal">
+            <p class="section-head__eyebrow">Zakres uslug</p>
+            <h2 id="services-title" class="section-head__title">Serwis klimatyzacji na pierwszym miejscu</h2>
+            <p class="section-head__desc">
+              Od pelnej obslugi ukladu AC po mobilny dojazd i regeneracje podzespolow.
+            </p>
+          </header>
+          <div class="services-grid js-reveal-stagger">
+            <article class="service-card">
+              <svg class="service-card__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2" />
+                <path d="M9.6 4.6A2 2 0 1 1 11 8H2" />
+                <path d="M12.6 19.4A2 2 0 1 0 14 16H2" />
+              </svg>
+              <h3 class="service-card__title">Kompleksowy serwis klimatyzacji</h3>
+              <p class="service-card__text">
+                Odgrzybianie, osuszanie i precyzyjne nabijanie czynnika zgodnie z parametrami producenta auta.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__thumb">
+                <img src="images/mobilny-serwis.png" alt="Serwis mobilny z dojazdem" width="560" height="350" loading="lazy" />
+              </div>
+              <h3 class="service-card__title">Serwis mobilny z dojazdem</h3>
+              <p class="service-card__text">
+                Realizujemy wybrane uslugi na miejscu u klienta, z szybkim dojazdem i diagnostyka w terenie.
+              </p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
+                <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                <path d="M12 2v2" />
+                <path d="M12 22v-2" />
+                <path d="m17 20.66-1-1.73" />
+                <path d="M11 10.27 7 3.34" />
+                <path d="m20.66 17-1.73-1" />
+                <path d="m3.34 7 1.73 1" />
+                <path d="M14 12h8" />
+                <path d="M2 12h2" />
+                <path d="m20.66 7-1.73 1" />
+                <path d="m3.34 17 1.73-1" />
+                <path d="m17 3.34-1 1.73" />
+                <path d="m11 13.73-4 6.93" />
+              </svg>
+              <h3 class="service-card__title">Regeneracja sprezarek</h3>
+              <p class="service-card__text">
+                Specjalistyczna regeneracja kompresorow klimatyzacji z kontrola efektywnosci po naprawie.
+              </p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+              <h3 class="service-card__title">Diagnostyka i szczelnosc AC</h3>
+              <p class="service-card__text">
+                Komputerowa diagnostyka oraz wykrywanie nieszczelnosci metoda UV i metoda wodorowa.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="section--gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <header class="section-head js-reveal">
+            <p class="section-head__eyebrow">Galeria realizacji</p>
+            <h2 id="gallery-title" class="section-head__title">Minimalizm procesu, maksymalna jakosc wykonania</h2>
+            <p class="section-head__desc">
+              Przykladamy uwage do kazdego szczegolu pracy serwisowej i diagnostycznej.
+            </p>
+          </header>
+          <div class="gallery-masonry">
+            <figure class="gallery-item gallery-item--h1 js-reveal">
+              <img src="images/realizacja-samochod.png" alt="Serwis klimatyzacji samochodowej przy stanowisku warsztatowym" width="700" height="560" loading="lazy" />
+            </figure>
+            <figure class="gallery-item gallery-item--h2 js-reveal">
+              <img src="images/realizacja-ciezarowka.png" alt="Obsluga klimatyzacji pojazdu ciezarowego przy naprawie AC" width="700" height="560" loading="lazy" />
+            </figure>
+            <figure class="gallery-item gallery-item--h3 js-reveal">
+              <img src="images/mobilny-serwis.png" alt="Mobilny serwis klimatyzacji z dojazdem do klienta" width="700" height="560" loading="lazy" />
+            </figure>
+            <figure class="gallery-item gallery-item--h2 js-reveal">
+              <img src="images/realizacja-klima-domowa.png" alt="Serwis jednostki klimatyzacji w przestrzeni mieszkalnej" width="700" height="560" loading="lazy" />
+            </figure>
+            <figure class="gallery-item gallery-item--h3 js-reveal">
+              <img src="images/realizacja-blok.png" alt="Montaz i obsluga jednostki zewnetrznej przy budynku wielorodzinnym" width="700" height="560" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="o-nas" class="section--about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <header class="section-head section-head--about js-reveal">
+            <p class="section-head__eyebrow">O firmie</p>
+            <h2 id="about-title" class="section-head__title">Doswiadczenie i spokojna pewnosc wykonania</h2>
+            <p class="section-head__desc">
+              AUTO-MAX Serwis Klimatyzacji to profesjonalna obsluga ukladow AC, skoncentrowana na rzetelnej diagnostyce i powtarzalnej jakosci.
+            </p>
+          </header>
+          <p class="about-grid__text js-reveal">
+            Pracujemy na sprawdzonych procedurach i nowoczesnym zapleczu technicznym. Kazdy uklad AC traktujemy indywidualnie, dlatego klienci wracaja po stabilna wydajnosc klimatyzacji i komfort jazdy przez caly sezon.
+          </p>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section--contact" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-head js-reveal">
+            <p class="section-head__eyebrow">Kontakt</p>
+            <h2 id="contact-title" class="section-head__title">Skontaktuj sie z AUTO-MAX Serwis Klimatyzacji</h2>
+            <p class="section-head__desc">Zadzwon - ustalimy termin serwisu stacjonarnego lub mobilnego z dojazdem.</p>
+          </header>
+          <div class="contact-card js-reveal">
+            <h3 class="contact-card__title">Dane kontaktowe</h3>
+            <ul class="contact-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D6EFD" stroke-width="1.4" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Trzciana 470, 39-304</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D6EFD" stroke-width="1.4" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <a href="tel:+48509541747">509 541 747</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc3545" stroke-width="1.4" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <a href="tel:+48733399239">733 399 239</a>
+              </li>
+            </ul>
+            <div class="contact-actions">
+              <a href="tel:+48509541747" class="btn--call">Zadzwon: 509 541 747</a>
+              <a href="tel:+48733399239" class="btn--call-alt">Alternatywnie: 733 399 239</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="footer-year"></span> AUTO-MAX Serwis Klimatyzacji. Serwis stacjonarny i mobilny z dojazdem do klienta.
+      </p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

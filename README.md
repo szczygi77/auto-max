@@ -1,40 +1,24 @@
-# FHU AUTO-MAX Landing Page
+# AUTO-MAX Serwis Klimatyzacji — strona statyczna
 
-Nowoczesny landing page dla serwisu klimatyzacji samochodowej FHU AUTO-MAX, zbudowany w:
-- Next.js (App Router)
-- Tailwind CSS
-- Framer Motion
-- Lucide React
+Czysty HTML, CSS i JavaScript — bez Node.js i frameworków.
 
-## Uruchomienie lokalne
+## Pliki
+
+| Plik / folder | Opis |
+|---------------|------|
+| `index.html` | Strona glowna |
+| `style.css` | Style |
+| `script.js` | Menu mobilne, animacje scroll, rok w stopce |
+| `images/` | Grafiki (hero, galeria) |
+
+## Hosting
+
+Wgraj cala zawartosc tego katalogu na hosting (FTP, cPanel, LH.pl itd.) tak, aby `index.html` byl w katalogu glownym domeny.
+
+## Podglad lokalny
 
 ```bash
-npm install
-npm run dev
+python3 -m http.server 8080
 ```
 
-Strona bedzie dostepna pod adresem [http://localhost:3000](http://localhost:3000).
-
-## Komendy produkcyjne
-
-```bash
-npm run lint
-npm run build
-npm run start
-```
-
-## Gdzie edytowac tresc i dane
-
-- Glowny uklad strony: `src/app/page.tsx`
-- Nawigacja: `src/components/Navbar.tsx`
-- Sekcje strony: `src/components/sections/*`
-- Zdjecia galerii (hardcoded): `src/lib/galleryImages.ts`
-- Globalne style i smooth scrolling: `src/app/globals.css`
-- Konfiguracja obrazow Unsplash: `next.config.ts`
-
-## Placeholdery do podmiany
-
-W sekcji kontaktu (`src/components/sections/ContactSection.tsx`) podmien:
-- adres firmy,
-- numer telefonu,
-- tresc formularza (jesli chcesz podpiac backend/API).
+Nastepnie otworz `http://localhost:8080`.
