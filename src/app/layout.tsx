@@ -10,9 +10,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "FHU AUTO-MAX | Serwis Klimatyzacji Samochodowej",
+  title: "AUTO-MAX Serwis Klimatyzacji | Serwis i Mobilny Dojazd",
   description:
-    "FHU AUTO-MAX - profesjonalny serwis klimatyzacji samochodowej, regeneracja sprezarek, diagnostyka i naprawy ukladu AC.",
+    "AUTO-MAX Serwis Klimatyzacji - kompleksowy serwis klimatyzacji samochodowej, serwis mobilny z dojazdem do klienta, diagnostyka i regeneracja sprezarek.",
 };
 
 export default function RootLayout({

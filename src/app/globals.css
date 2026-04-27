@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --section: #f8f9fa;
-  --foreground: #1a1a1a;
-  --accent: #4682b4;
-  --line: #e8ecef;
+  --background: #0b0d12;
+  --section: #121722;
+  --foreground: #f3f6fb;
+  --accent: #0d6efd;
+  --accent-strong: #dc3545;
+  --line: #283243;
 }
 
 @theme inline {
@@ -13,6 +14,7 @@
   --color-section: var(--section);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
   --color-line: var(--line);
   --font-sans: var(--font-montserrat);
 }

@@ -7,7 +7,7 @@ import { ServicesSection } from "@/components/sections/ServicesSection";
 
 export default function Home() {
   return (
-    <div className="bg-[#FFFFFF] text-[#1A1A1A]">
+    <div className="bg-[#0b0d12] text-[#f3f6fb]">
       <Navbar />
       <main>
         <HeroSection />
@@ -16,8 +16,8 @@ export default function Home() {
         <AboutSection />
         <ContactSection />
       </main>
-      <footer className="border-t border-[#e4e9ee] bg-[#F8F9FA] px-4 py-8 text-center text-sm font-light text-[#4b4b4b] md:px-6">
-        © {new Date().getFullYear()} FHU AUTO-MAX. Specjalistyczny serwis klimatyzacji samochodowej.
+      <footer className="border-t border-[#283243] bg-[#0b0d12] px-4 py-8 text-center text-sm font-light text-[#aab7cc] md:px-6">
+        © {new Date().getFullYear()} AUTO-MAX Serwis Klimatyzacji. Serwis stacjonarny i mobilny z dojazdem do klienta.
       </footer>
     </div>
   );

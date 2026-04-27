@@ -7,7 +7,7 @@ import { galleryImages } from "@/lib/galleryImages";
 
 export function GallerySection() {
   return (
-    <section id="galeria" className="px-4 py-20 md:px-6 md:py-24">
+    <section id="galeria" className="bg-[#0b0d12] px-4 py-20 md:px-6 md:py-24">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionTitle
@@ -19,7 +19,7 @@ export function GallerySection() {
         <div className="mt-12 columns-1 gap-4 sm:columns-2 lg:columns-3">
           {galleryImages.map((image, index) => (
             <Reveal key={image.src} delay={index * 0.05}>
-              <div className="relative mb-4 break-inside-avoid overflow-hidden rounded-[4px] border border-[#e6ecf1] bg-white">
+              <div className="relative mb-4 break-inside-avoid overflow-hidden rounded-[4px] border border-[#283243] bg-[#121722]">
                 <Image
                   src={image.src}
                   alt={image.alt}
