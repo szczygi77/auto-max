@@ -1,9 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Phone, Send } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+
+const PHONE_PRIMARY = "509 541 747";
+const PHONE_PRIMARY_HREF = "tel:+48509541747";
+const PHONE_SECONDARY = "733 399 239";
+const PHONE_SECONDARY_HREF = "tel:+48733399239";
+const ADDRESS = "Trzciana 470, 39-304";
 
 export function ContactSection() {
   return (
@@ -13,56 +19,47 @@ export function ContactSection() {
           <SectionTitle
             eyebrow="Kontakt"
             title="Skontaktuj sie z AUTO-MAX Serwis Klimatyzacji"
-            description="Odpowiemy szybko i zaproponujemy termin serwisu stacjonarnego lub mobilnego z dojazdem."
+            description="Zadzwon - ustalimy termin serwisu stacjonarnego lub mobilnego z dojazdem."
           />
         </Reveal>
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
-          <Reveal>
-            <div className="border border-[#283243] bg-[#121722] p-7">
-              <h3 className="text-xl font-semibold tracking-[0.03em] text-[#f3f6fb]">Dane kontaktowe</h3>
-              <ul className="mt-6 space-y-5 font-light text-[#b8c4d8]">
-                <li className="flex items-start gap-3">
-                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#0D6EFD]" strokeWidth={1.4} />
-                  <span>ul. Przykladowa 12, 00-000 Miasto</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Phone className="mt-0.5 h-5 w-5 shrink-0 text-[#0D6EFD]" strokeWidth={1.4} />
-                  <span>+48 600 000 000</span>
-                </li>
-              </ul>
+        <Reveal delay={0.08} className="mt-12">
+          <div className="mx-auto max-w-xl border border-[#283243] bg-[#121722] p-8">
+            <h3 className="text-xl font-semibold tracking-[0.03em] text-[#f3f6fb]">Dane kontaktowe</h3>
+            <ul className="mt-6 space-y-5 font-light text-[#b8c4d8]">
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#0D6EFD]" strokeWidth={1.4} />
+                <span>{ADDRESS}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="mt-0.5 h-5 w-5 shrink-0 text-[#0D6EFD]" strokeWidth={1.4} />
+                <a href={PHONE_PRIMARY_HREF} className="hover:text-white">
+                  {PHONE_PRIMARY}
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="mt-0.5 h-5 w-5 shrink-0 text-[#dc3545]" strokeWidth={1.4} />
+                <a href={PHONE_SECONDARY_HREF} className="hover:text-white">
+                  {PHONE_SECONDARY}
+                </a>
+              </li>
+            </ul>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <motion.a
+                whileHover={{ backgroundColor: "#0b5ed7" }}
+                href={PHONE_PRIMARY_HREF}
+                className="inline-flex w-full items-center justify-center rounded-full bg-[#0D6EFD] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-black/25 sm:w-auto"
+              >
+                Zadzwon: {PHONE_PRIMARY}
+              </motion.a>
+              <a
+                href={PHONE_SECONDARY_HREF}
+                className="inline-flex w-full items-center justify-center rounded-full border border-[#283243] px-8 py-3 text-sm font-medium text-[#e4ebf5] hover:border-[#0D6EFD] sm:w-auto"
+              >
+                Alternatywnie: {PHONE_SECONDARY}
+              </a>
             </div>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <form className="border border-[#283243] bg-[#121722] p-7">
-              <h3 className="text-xl font-semibold tracking-[0.03em] text-[#f3f6fb]">Formularz kontaktowy</h3>
-              <div className="mt-5 space-y-4">
-                <input
-                  type="text"
-                  placeholder="Imie i nazwisko"
-                  className="w-full border border-[#283243] bg-[#0b0d12] px-4 py-3 text-[#f3f6fb] placeholder:text-[#8ea0ba] focus:border-[#0D6EFD] focus:outline-none"
-                />
-                <input
-                  type="tel"
-                  placeholder="Telefon"
-                  className="w-full border border-[#283243] bg-[#0b0d12] px-4 py-3 text-[#f3f6fb] placeholder:text-[#8ea0ba] focus:border-[#0D6EFD] focus:outline-none"
-                />
-                <textarea
-                  placeholder="Wiadomosc"
-                  rows={4}
-                  className="w-full border border-[#283243] bg-[#0b0d12] px-4 py-3 text-[#f3f6fb] placeholder:text-[#8ea0ba] focus:border-[#0D6EFD] focus:outline-none"
-                />
-                <motion.button
-                  type="button"
-                  whileHover={{ backgroundColor: "#b02a37" }}
-                  className="inline-flex items-center gap-2 rounded-full bg-[#dc3545] px-6 py-3 text-sm font-medium text-white"
-                >
-                  <Send className="h-4 w-4" />
-                  Zamow kontakt i dojazd
-                </motion.button>
-              </div>
-            </form>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
