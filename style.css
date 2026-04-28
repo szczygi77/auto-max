@@ -666,6 +666,12 @@ ul {
   color: #fff;
 }
 
+.contact-list a {
+  color: #e6eefc;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .contact-actions {
   margin-top: 2rem;
   display: flex;
@@ -725,6 +731,59 @@ ul {
 
 .btn--call-alt:hover {
   border-color: var(--accent-blue);
+}
+
+.contact-extra-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .contact-extra-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.btn--mail,
+.btn--facebook {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .btn--mail,
+  .btn--facebook {
+    width: auto;
+  }
+}
+
+.btn--mail {
+  color: #fff;
+  background: #198754;
+}
+
+.btn--mail:hover {
+  background: #157347;
+}
+
+.btn--facebook {
+  color: #fff;
+  background: #1877f2;
+}
+
+.btn--facebook:hover {
+  background: #0f5ec7;
 }
 
 /* Footer */
