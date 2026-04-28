@@ -116,6 +116,18 @@ ul {
   }
 }
 
+.brand-title {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .brand-title {
+    font-size: 1.12rem;
+  }
+}
+
 .site-header__brand svg {
   flex-shrink: 0;
 }
@@ -450,7 +462,7 @@ ul {
 
 @media (min-width: 1024px) {
   .services-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 }
@@ -668,8 +680,7 @@ ul {
 
 .contact-list a {
   color: #e6eefc;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 .contact-actions {
@@ -737,6 +748,7 @@ ul {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.75rem;
 }
 
@@ -744,6 +756,7 @@ ul {
   .contact-extra-actions {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -770,11 +783,11 @@ ul {
 
 .btn--mail {
   color: #fff;
-  background: #198754;
+  background: #dc3545;
 }
 
 .btn--mail:hover {
-  background: #157347;
+  background: #b02a37;
 }
 
 .btn--facebook {
@@ -784,6 +797,12 @@ ul {
 
 .btn--facebook:hover {
   background: #0f5ec7;
+}
+
+.fb-inline-icon,
+.fb-btn-icon {
+  display: inline-block;
+  object-fit: contain;
 }
 
 /* Footer */
